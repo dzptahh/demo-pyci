@@ -40,6 +40,4 @@ jobs:
           coverage xml
 
       - name: Upload coverage report using Github Action
-        uses: curl -Os https://uploader.codecov.io/latest/macos/codecov
-              chmod +x codecov 
-              ./codecov
+        uses: codecov/codecov-action@v3
